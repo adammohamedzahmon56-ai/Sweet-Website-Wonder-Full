@@ -121,9 +121,14 @@ h1 {
   background-color: #007b00;
 }
 
+.sweet8{
+  margin: auto;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
   .sweet {
     width: 90%;
   }
 }
+
