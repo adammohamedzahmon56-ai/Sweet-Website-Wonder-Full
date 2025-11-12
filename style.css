@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px 0;
+  color: #222;
+}
+
+.parent1 {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sweet {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+  transition: all 4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.sweet:hover {
+  transform: rotateY(180deg);
+}
+
+.sweet div {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.front {
+  background-color: dimgrey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+}
+
+.button {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.cancel {
+  background-color: crimson;
+}
+
+.cancel:hover {
+  background-color: white;
+  color: crimson;
+}
+
+
+.back1 { background-image: url("img/Sweet1.jpg"); }
+.back2 { background-image: url("img/Sweet2.jpg"); }
+.back3 { background-image: url("img/Sweet3.jpg"); }
+.back4 { background-image: url("img/Sweet4.jpg"); }
+.back5 { background-image: url("img/Sweet5.jpg"); }
+.back6 { background-image: url("img/Sweet6.jpg"); }
+.back7 { background-image: url("img/Sweet7.jpg"); }
+.back8 { background-image: url("img/Sweet9.jpg"); }
+.back9 { background-image: url("img/Sweet8.jpg"); }
+
+.cart {
+  margin-top: 40px;
+}
+
+#showprice,
+#sendorder {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#showprice:hover,
+#sendorder:hover {
+  background-color: #007b00;
+}
+
+
+@media (max-width: 768px) {
+  .sweet {
+    width: 90%;
+  }
+}
